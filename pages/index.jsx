@@ -5,6 +5,7 @@ import Header from "../components/Header";
 import Earth from "../components/Earth";
 import Moon from "../components/Moon";
 import Mars from "../components/Mars";
+import LazyLoader from "../components/LazyLoader";
 
 function Zoom() {
   useFrame((state) => {
@@ -17,8 +18,8 @@ export default function Home() {
   return (
     <>
       <Header />
-      <Canvas camera={{ position: [0, 0, 75], fov: 30 }}>
-        <Suspense fallback={null}>
+      <Suspense fallback={<LazyLoader delay={300} />}>
+        <Canvas camera={{ position: [0, 0, 75], fov: 30 }}>
           <ScrollControls
             pages={4} // Each page takes 100% of the height of the canvas
             distance={1} // A factor that increases scroll bar travel (default: 1)
@@ -126,9 +127,9 @@ export default function Home() {
             </Scroll>
           </ScrollControls>
           <Zoom />
-          <Preload />
-        </Suspense>
-      </Canvas>
+          {/* <Preload /> */}
+        </Canvas>
+      </Suspense>
     </>
   );
 }
