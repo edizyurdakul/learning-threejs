@@ -17,8 +17,7 @@ const Earth = (props) => {
       ref={group}
       {...props}
       dispose={null}
-      position={[viewport.width / 3, 0, 0]}
-      scale={0.25}
+      position={[viewport.width / 2, 0, -50]}
     >
       <group rotation={[-Math.PI / 2, 0, 0]}>
         <group rotation={[Math.PI / 2, 0, 0]}>

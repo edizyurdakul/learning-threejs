@@ -1,0 +1,28 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  position: absolute;
+  color: white;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 1rem 4rem;
+  padding: 0.5rem 4rem;
+  z-index: 2;
+  background-color: rgb(7, 7, 7);
+  border-radius: 20px;
+}
+
+.header__title {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+}
+
+.header__nav__link {
+  padding: 0.5rem;
+  &:not(:last-child) {
+    margin: 0 1rem;
+  }
+}
