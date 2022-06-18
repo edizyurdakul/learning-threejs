@@ -37,9 +37,9 @@ export default function Home() {
                 fade
                 speed={0}
               />
-              <Earth scale={0.25} />
-              <Moon scale={0.05} />
-              <Mars scale={0.25} />
+              <Earth scale={0.15} />
+              <Moon scale={0.075} />
+              <Mars scale={0.15} />
             </Scroll>
             <Scroll html style={{ width: "100%" }}>
               <div

@@ -17,7 +17,7 @@ const Moon = (props) => {
       ref={group}
       {...props}
       dispose={null}
-      position={[-viewport.width / 4, -viewport.height * 1.5, 0]}
+      position={[-viewport.width / 6, -viewport.height * 1.5, 0]}
     >
       <group rotation={[-Math.PI / 2, 0, 0]}>
         <group rotation={[Math.PI / 2, 0, 0]}>
