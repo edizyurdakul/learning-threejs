@@ -100,7 +100,7 @@ export default function Home() {
               <div
                 style={{
                   position: "absolute",
-                  top: "260vh",
+                  top: "340vh",
                   right: "50vw",
                 }}
               >
